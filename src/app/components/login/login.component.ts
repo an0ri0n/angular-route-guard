@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import validate = WebAssembly.validate;
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
+  exampleEmail = 'example@mail.com';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  onSubmit(value: any){
+    console.log(value);
   }
-
 }
